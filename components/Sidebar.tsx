@@ -32,18 +32,27 @@ const Sidebar = () => {
 
 			{/* Social icons */}
 			<div className="flex justify-around w-9/12 mx-auto mt-8 mb-5 text-gray-lePois md:w-full">
-				<a href="https://github.com/PetitsPoissons" className="cursor-pointer">
+				<a
+					href="https://github.com/PetitsPoissons"
+					className="cursor-pointer"
+					aria-label="GitHub"
+				>
 					<AiFillGithub className="w-8 h-8" />
 				</a>
 
 				<a
 					href="https://www.linkedin.com/in/sandrinepoissonnet"
 					className="cursor-pointer"
+					aria-label="linkedIn"
 				>
 					<AiFillLinkedin className="w-8 h-8" />
 				</a>
 
-				<a href="https://www.vegrum.com" className="cursor-pointer">
+				<a
+					href="https://www.vegrum.com"
+					className="cursor-pointer"
+					aria-label="Vegrum"
+				>
 					<Image
 						src="/images/vegrum-logo-earth.png"
 						alt="Logo for VEGRUM"
