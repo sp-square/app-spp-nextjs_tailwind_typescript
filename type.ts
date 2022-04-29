@@ -66,6 +66,7 @@ export type Technology =
 	| 'D3.js'
 	| 'Express'
 	| 'Firebase'
+	| 'Framer Motion'
 	| 'GraphQL'
 	| 'Heroku'
 	| 'HTML'

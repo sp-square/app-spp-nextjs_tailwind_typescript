@@ -152,6 +152,13 @@ export const frameworks: ISkill[] = [
 			'Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces.',
 		level: '90%',
 	},
+	// {
+	// 	Icon: BsCircleFill,
+	// 	name: 'Framer Motion',
+	// 	shortDesc:
+	// 		'Framer Motion is an open source, production-ready motion library for React.',
+	// 	level: '60%',
+	// },
 	{
 		Icon: BsCircleFill,
 		name: 'Apache Spark',
@@ -280,9 +287,34 @@ export const platforms: ISkill[] = [
 export const projects: IProject[] = [
 	{
 		id: 1,
-		name: 'VEGRUM',
+		name: "Sandrine's personal website",
 		description:
-			'Moderated blog app to write and read about plant-based lifestyle and its impact on current environmental issues. Vegrum also includes a recipe finder and a restaurant finder',
+			'Personal website to present my backgraound, experience, and portfolio of projects.',
+		imagePath: '/images/projects/screenshot-portfolio-spp.png',
+		deployedUrl: 'https://sandrinepoissonnet.online',
+		githubUrl: 'Private',
+		lastUpdated: 'April 2022',
+		cloud: ['GitHub', 'Vercel'],
+		type: ['Frontend', 'Personal Website'],
+		categories: ['JS', 'Frontend'],
+		technologies: [
+			'CSS',
+			'Framer Motion',
+			'HTML',
+			'JavaScript',
+			'Next.js',
+			'Node',
+			'React',
+			'Tailwind CSS',
+			'TypeScript',
+			'Vercel',
+		],
+	},
+	{
+		id: 2,
+		name: 'Moderated blog for all things plant-based',
+		description:
+			'Medium-like app to write and read about plant-based lifestyle and its impact on current environmental issues. Vegrum also includes a recipe finder and a restaurant finder. The content is managed and moderated using Sanity.io as the CMS.',
 		imagePath: '/images/projects/vegrum-logo-full-color.png',
 		deployedUrl: 'https://vegrum.com',
 		githubUrl: 'Private',
@@ -304,8 +336,8 @@ export const projects: IProject[] = [
 		],
 	},
 	{
-		id: 2,
-		name: 'CouCouGram',
+		id: 3,
+		name: 'Private Instagram for friends and family',
 		description: 'Private Instagram-like app for friends and family.',
 		imagePath: '/images/projects/coucougram_logo-txt.png',
 		deployedUrl: 'https://coucougram.com',
@@ -328,8 +360,8 @@ export const projects: IProject[] = [
 		],
 	},
 	{
-		id: 3,
-		name: 'ideal3.com',
+		id: 4,
+		name: "ideal3's company website",
 		description:
 			'Website built for ideal3, an international specialty claims and risk management company.',
 		imagePath: '/images/projects/screenshot-ideal3.png',
@@ -342,8 +374,8 @@ export const projects: IProject[] = [
 		technologies: ['CSS', 'Heroku', 'HTML', 'JavaScript', 'Node', 'Webpack'],
 	},
 	{
-		id: 4,
-		name: 'drbwilliamson.com',
+		id: 5,
+		name: "Dr. Williamson's private practice website",
 		description: 'Website built for a clinical psychology private practice.',
 		imagePath: '/images/projects/screenshot-drbwilliamson.png',
 		deployedUrl: 'https://drbwilliamson.com',
@@ -355,8 +387,8 @@ export const projects: IProject[] = [
 		technologies: ['Weebly'],
 	},
 	{
-		id: 5,
-		name: 'Visualizing World Happiness',
+		id: 6,
+		name: 'World Happiness in charts and on a map',
 		description:
 			'Interactive choropleth map, charts, and data table built based on the 2019 World Happiness Report, a landmark survey of the state of global happiness produced by the United Nations Sustainable Development Solutions Network.',
 		imagePath: '/images/projects/screenshot-world-happiness.png',
