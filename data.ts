@@ -1,4 +1,4 @@
-import { IProject, IProjectTypeOption, IService, ISkill } from './type';
+import { IProject, IService, ISkill } from './type';
 import { BsGraphUp, BsCircleFill } from 'react-icons/bs';
 import { FaServer } from 'react-icons/fa';
 import { GiSpiderWeb } from 'react-icons/gi';
@@ -279,6 +279,7 @@ export const platforms: ISkill[] = [
 
 export const projects: IProject[] = [
 	{
+		id: 1,
 		name: 'VEGRUM',
 		description:
 			'Moderated blog app to write and read about plant-based lifestyle and its impact on current environmental issues. Vegrum also includes a recipe finder and a restaurant finder',
@@ -303,6 +304,7 @@ export const projects: IProject[] = [
 		],
 	},
 	{
+		id: 2,
 		name: 'CouCouGram',
 		description: 'Private Instagram-like app for friends and family.',
 		imagePath: '/images/projects/coucougram_logo-txt.png',
@@ -326,6 +328,7 @@ export const projects: IProject[] = [
 		],
 	},
 	{
+		id: 3,
 		name: 'ideal3.com',
 		description:
 			'Website built for ideal3, an international specialty claims and risk management company.',
@@ -339,6 +342,7 @@ export const projects: IProject[] = [
 		technologies: ['CSS', 'Heroku', 'HTML', 'JavaScript', 'Node', 'Webpack'],
 	},
 	{
+		id: 4,
 		name: 'drbwilliamson.com',
 		description: 'Website built for a clinical psychology private practice.',
 		imagePath: '/images/projects/screenshot-drbwilliamson.png',
@@ -351,6 +355,7 @@ export const projects: IProject[] = [
 		technologies: ['Weebly'],
 	},
 	{
+		id: 5,
 		name: 'Visualizing World Happiness',
 		description:
 			'Interactive choropleth map, charts, and data table built based on the 2019 World Happiness Report, a landmark survey of the state of global happiness produced by the United Nations Sustainable Development Solutions Network.',

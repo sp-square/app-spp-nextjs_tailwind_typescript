@@ -4,11 +4,13 @@ import { Category } from '../type';
 export const NavItem: FunctionComponent<{
 	value: Category | 'All';
 	filterByCategory: Function;
-	activeCategory: String;
+	activeCategory: string;
 }> = ({ value, filterByCategory, activeCategory }) => {
-	let liClassName = 'cursor-pointer hover:text-green-awardCeremony sm:text-sm';
+	let liClassName =
+		'cursor-pointer hover:text-green-awardCeremony sm:text-sm  dark:hover:text-pink-lePois';
 	if (activeCategory === value) {
-		liClassName += ' text-green-awardCeremony font-semibold';
+		liClassName +=
+			' text-green-awardCeremony font-semibold dark:text-pink-lePois';
 	}
 	return (
 		<li className={liClassName} onClick={() => filterByCategory(value)}>
@@ -19,7 +21,7 @@ export const NavItem: FunctionComponent<{
 
 const CategoryNavbar: FunctionComponent<{
 	filterByCategory: Function;
-	activeCategory: String;
+	activeCategory: string;
 }> = (props) => {
 	return (
 		<nav className="flex px-5 py-2 space-x-3 overflow-x-auto list-none">

@@ -10,6 +10,7 @@ import { fadeInUp, stagger, fadeInOut } from '../animations';
 const Portfolio: NextPage = () => {
 	const [selectedProjects, setSelectedProjects] = useState(projects);
 	const [activeCategory, setActiveCategory] = useState('All');
+	const [showDetail, setShowDetail] = useState<Number | null>(null);
 
 	const filterByCategory = (category: Category | 'All') => {
 		if (category === 'All') {
@@ -54,7 +55,11 @@ const Portfolio: NextPage = () => {
 							key={idx}
 							variants={fadeInUp}
 						>
-							<ProjectCard project={project} />
+							<ProjectCard
+								project={project}
+								showDetail={showDetail}
+								setShowDetail={setShowDetail}
+							/>
 						</motion.div>
 					))}
 				</motion.div>

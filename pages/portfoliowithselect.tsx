@@ -14,10 +14,10 @@ const projectTypes = [
 ];
 
 const Portfolio: NextPage = () => {
-	const [selectedProjectType, setSelectedProjectType] = useState<String>(
+	const [selectedProjectType, setSelectedProjectType] = useState<string>(
 		projectTypes[0]
 	);
-	const [queryProjectType, setQueryProjectType] = useState<String>('');
+	const [queryProjectType, setQueryProjectType] = useState<string>('');
 
 	const filteredProjectTypes =
 		queryProjectType === ''

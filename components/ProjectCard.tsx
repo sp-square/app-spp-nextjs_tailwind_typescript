@@ -9,8 +9,11 @@ import Image from 'next/image';
 
 const ProjectCard: FunctionComponent<{
 	project: IProject;
+	showDetail: Number | null;
+	setShowDetail: (id: Number | null) => void;
 }> = ({
 	project: {
+		id,
 		name,
 		description,
 		imagePath,
@@ -21,25 +24,28 @@ const ProjectCard: FunctionComponent<{
 		type,
 		technologies,
 	},
+	showDetail,
+	setShowDetail,
 }) => {
-	const [showDetail, setShowDetail] = useState(false);
-
 	return (
 		<>
 			<Image
 				src={imagePath}
 				alt={name}
 				className="cursor-pointer"
-				onClick={() => setShowDetail(true)}
+				onClick={() => setShowDetail(id)}
 				width="300"
 				height="200"
 				layout="responsive"
 			/>
 			<p className="my-2">{name}</p>
-			{showDetail && (
-				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+			{showDetail === id && (
+				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
 					<motion.div variants={stagger} initial="initial" animate="final">
-						<motion.div variants={fadeInUp}>
+						<motion.div
+							variants={fadeInUp}
+							className="border-2 dark:border-blue-lePois border-gray-lePois"
+						>
 							<Image
 								src={imagePath}
 								alt={name}
@@ -96,7 +102,7 @@ const ProjectCard: FunctionComponent<{
 
 					<button
 						className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 dark:bg-dark-200 focus:outline-none"
-						onClick={() => setShowDetail(false)}
+						onClick={() => setShowDetail(null)}
 					>
 						<MdClose size={30} />
 					</button>

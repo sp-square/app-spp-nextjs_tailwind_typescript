@@ -1,25 +1,26 @@
 import { IconType } from 'react-icons';
 
 export interface IService {
-	title: String;
-	description: String;
+	title: string;
+	description: string;
 	Icon: IconType;
 }
 
 export interface ISkill {
-	name: String;
-	shortDesc: String;
-	level: String;
+	name: string;
+	shortDesc: string;
+	level: string;
 	Icon: IconType;
 }
 
 export interface IProject {
-	name: String;
-	description: String;
-	imagePath: String;
-	deployedUrl: String;
-	githubUrl: String;
-	lastUpdated: String;
+	id: Number;
+	name: string;
+	description: string;
+	imagePath: string;
+	deployedUrl: string;
+	githubUrl: string;
+	lastUpdated: string;
 	cloud: Cloud[];
 	type: Type[];
 	categories: Category[];

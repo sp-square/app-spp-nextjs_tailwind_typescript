@@ -14,9 +14,6 @@ module.exports = {
 			Montserrat: ['Montserrat', 'sans-serif'],
 		},
 		extend: {
-			backgroundImage: {
-				microChip: "url('/images/bg_microchip.jpg')",
-			},
 			listStyleType: {
 				square: 'square',
 				check: 'check',

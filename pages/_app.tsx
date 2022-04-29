@@ -1,9 +1,8 @@
 import { ThemeProvider } from 'next-themes';
-import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-import { Router } from 'next/router';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps, router }) {
 	return (

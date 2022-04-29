@@ -7,6 +7,19 @@
 @tailwind utilities;
 
 body {
-	background-color: black;
+	background-image: url('/images/bg_microchip.jpg');
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right bottom, #efcbb7, #a5ccd4);
+}
+
+::-webkit-scrollbar {
+	height: 0px;
+	width: 10px;
 }

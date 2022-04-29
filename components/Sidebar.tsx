@@ -32,17 +32,25 @@ const Sidebar = () => {
 
 			{/* Social icons */}
 			<div className="flex justify-around w-9/12 mx-auto mt-8 mb-5 text-gray-lePois md:w-full">
-				<a href="" className="cursor-pointer">
+				<a href="https://github.com/PetitsPoissons" className="cursor-pointer">
 					<AiFillGithub className="w-8 h-8" />
 				</a>
-				<a href="" className="cursor-pointer">
+
+				<a
+					href="https://www.linkedin.com/in/sandrinepoissonnet"
+					className="cursor-pointer"
+				>
 					<AiFillLinkedin className="w-8 h-8" />
 				</a>
-				<a href="" className="cursor-pointer">
-					<img
+
+				<a href="https://www.vegrum.com" className="cursor-pointer">
+					<Image
 						src="/images/vegrum-logo-earth.png"
 						alt="Logo for VEGRUM"
 						className="w-10 h-10"
+						height={36}
+						width={36}
+						quality="100"
 					/>
 				</a>
 			</div>
@@ -69,9 +77,9 @@ const Sidebar = () => {
 			</button>
 
 			<a
-				href=""
 				className="flex items-center justify-center w-8/12 px-5 py-2 mx-auto my-2 text-white rounded-full bg-gradient-to-b from-blue-lePois to-green-awardCeremony focus:outline-none"
-				download=""
+				href="/docs/resume.pdf"
+				download="resume.pdf"
 			>
 				<AiOutlineDownload className="w-6 h-6 mr-2" />
 				Resume
